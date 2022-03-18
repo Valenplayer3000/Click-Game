@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="us">
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+    </head>    
+
+    <h1 class="center">Clicks: <span id="clicks">0</span></h1>
+
+    <button class="items-center" onClick="onClick()">
+        Click me!
+    </button>
+<div class="grid-container">
+    <div class="card">
+        <h3>
+            More Click
+        </h3>
+        <p>Incerase the Click Counts</p>
+        <p>Current: <span id="more_click_counter">1</span>x</p>
+        <p> Require: <span id= "clicks_requires">10</span> clicks</p>
+        <p class="error" id="buy_error"></p>
+        <button onClick="buy_more_click()">Buy</button>
+    </div>
+
+    <div class="card">
+        <h3>
+            Click Multiplier
+        </h3>
+        <p>Multiply the Click Counts</p>
+        <p>Current: <span id="multi">1</span>x</p>
+        <p> Require: <span id= "clicks_requires_multi">1000</span> clicks</p>
+        <p class="error" id="buy_error_multi"></p>
+        <button onClick="buy_click_multi()">Buy</button>
+    </div>
+</div>
+</body>
+
+<script src="main.js"></script>
+</html>
